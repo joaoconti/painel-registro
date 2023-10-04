@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap');
+
+:root {
+    --verde: #BCFFD7;
+}
+
+* {
+    padding: 0; /* Ele vai dar um espaçamento interno */
+    margin: 0; /* Ele vai dar um espaçamento externo */
+    text-align: center; /* Alinhar o texto no centro */
+    box-sizing: border-box; /* Adionar borda no tamanho máx */
+    font-family: 'Open Sans', sans-serif; /* Aplicanto fonte */
+}
+
+html, 
+body {
+    width: 100vw; /* Largura */
+    height: 100vh; /* Altura */
+    font-size: 62.5%; /* Definir tamanho da fonte */
+}
+
+.main {
+    width: 100vw; /* Largura */
+    height: 100%; /* Altura */
+    background-color: rgb(0, 0, 0); /* Definir uma cor de fundo */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinhar na vertical */
+    justify-content: center; /* Alinhar na horizontal */
+    gap: 1.8rem;
+}
+
+.notificacao {
+    width: 27.2rem; /* Largura */
+    height: 5.1rem; /* Altura */
+    background: #fff; /* Definir um fundo */
+    border-radius: 2rem; /* Arredondar as pontas */
+    display: none;
+    align-items: center; /* Alinhar na horizontal */
+    justify-content: center; /* Alinhar na vertical */
+    gap: 1.2rem; /* Espaçamento entre os elementos flex */
+}
+
+.notificacao h3 {
+    font-size: 1.3rem; /* Tamanho da fonte */
+}
+
+.notificacao h3 span {
+    text-decoration-line: underline; /* Adicionar uma linha no texto */
+}
+
+.container {
+    width: 39.6rem; /* Largura */
+    height: 57.9rem; /* Altura */
+    background-color: #fff; /* Definir uma cor de fundo */
+    border-radius: 2rem; /* Arredondar cantos */
+    display: flex;
+    flex-direction: column; /* Mudando a direção para colunas */
+    align-items: center; /* Alinhar na vertical */
+}
+
+.decoracao {
+    width: 32.4rem; /* Largura */
+    height: 2.1rem; /* Altura */
+    background-color: #BCFFD7; /* definir uma cor de fundo */
+    border-radius: 0px 0px 2rem 2rem; /* Arredondar cantos */
+}
+
+.container h1 {
+    margin-top: 2.5rem; /* Espaçamento externo */
+    font-size: 2.4rem; /* Tamanho da fonte */
+    font-weight: 700; /* Largura da fonte */
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column; /* Mudando a direção para coluna */
+    gap: 1.6rem; /* Espaçamento entre os elementos flex */
+    margin-top: 1.6rem; /* Espaçamento externo */
+}
+
+.formulario .input-texto,
+.formulario select {
+    width: 32.4rem; /* Largura */
+    height: 3.7rem; /* Altura */
+    border-radius: 2rem; /* Arredondar canto */
+    background-color: #EFEFEF; /* Definir a cor do fundo */
+    border: none; /* Não mostrar borda */
+    text-align: start; /* Posicionando o texto no começo */
+    padding-left: 2rem; /* Espaçamento internto */
+    -webkit-appearance: none; /* Remover seta do select */
+}
+
+.formulario select {
+    cursor: pointer; /* Alterar o cursor */
+    padding: 0;
+}
+
+.formulario .input-texto::placeholder {
+    color: #5F5F5F; /* Trocar cor do texto */
+    text-align: start; /* Alinhar o texto no começo */
+}
+
+.formulario .input-texto:focus,
+.formulario select:focus {
+    outline: none; /* Remover linha de fora */
+}
+
+.formulario label {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    text-transform: uppercase; /* Transformando todas as letrar em maiúsculas */
+}
+
+.autorizacao {
+    display: flex;
+    flex-direction: row-reverse; /* Inverter a direção na linha */
+    align-items: center; /* Alinhar na vertical */
+    justify-content: center; /* Alinhar na horizontal */
+    gap: 0.5rem; /* Espaçamento entro os elementos flex */
+}
+
+.autorizacao label {
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+.formulario button {
+    width: 32.4rem; /* Largura */
+    height: 4.2rem; /* Altura */
+    border: 1px solid var(--verde); /* Borda */
+    background-color: transparent; /* Cor de fundo */
+    cursor: pointer; /* Mudar o cursor */
+    font-size: 2rem; /* Tamanho da fonte */
+    font-weight: 500;  /* Grossura da fonte */
+    border-radius: 1rem; /* Arredondar canto */
+    transition: all 0.3s; /* Criar uma transação */
+}
+
+.formulario button:hover {
+    background-color: var(--verde); /* Mudar a cor de fundo */
+}
+
+.premio {
+    width: 57rem; /* Largura */
+    height: 26.4rem; /* Altura */
+    background: #fff; /* Mudar o fundo */
+    display: none;
+    flex-direction: column; /* Mudar direção flex */
+    align-items: center; /* Alinar na vertical */
+    justify-content: start; /* Alinhar na horizontal */
+    gap: 0.5rem; /* Espaçamento entre os elementos */
+    border-radius: 20px; /* Arredondar canto */
+}
+
+.premio h1 {
+    font-size: 2.5rem; /* tamanho da fonte */
+    text-transform: uppercase; /* Tranformar o texto */
+}
+
+.premio img {
+    width: 28rem; /* Altura */
+    height: auto; /* Largura */
+}
+
+.premio p {
+    font-size: 2rem; /* Tamanho da fonte */
+}
