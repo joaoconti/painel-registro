@@ -8,13 +8,22 @@ version '1.0'
 
 client_scripts {
     '@vrp/lib/utils.lua',
-    'config/geral.lua'
-    'conti_client.lua'
+    'config/geral.lua',
+    'conti_client.lua',
 }
 
 server_scripts {
     '@vrp/lib/utils.lua',
     'config/geral.lua',
     'config/recompensa.lua',
-    'conti_server.lua'
+    'conti_server.lua',
+}
+
+ui_page './nui/assets/index.html'
+
+files {
+    './nui/assets/index.html',
+    './nui/assets/css/*',
+    './nui/assets/img/*',
+    './nui/assets/js/*',
 }
